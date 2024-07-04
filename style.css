@@ -1,8 +1,6 @@
 @font-face {
     font-family: 'Inter';
     src: url('assets/fonts/Inter-VariableFont_slnt_wght.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
     /* 
         type of format()
         - opentype (itf)
@@ -12,7 +10,6 @@
         - svg
     */
 }
-
 /*  
     Responsive design
     - Mobile: 375px
@@ -69,8 +66,33 @@ body {
     border-radius: 100%;
     width: 75px;
     height: auto;
+    margin-bottom: 25px;
 }
-
-.description h1,p {
+.description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.description h1{
+    text-align: center;
     font-family: var(--font-family);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.description-adress{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--primary-green);
+    font-family: var(--font-family);
+}
+.description-me{
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: 0.80rem;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
