@@ -1,14 +1,27 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    /* 
+        type of format()
+        - opentype (itf)
+        - truetype (ttf)
+        - embedded-opentype 
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+    */
+}
 
 /*  
     Responsive design
     - Mobile: 375px
     - Desktop: 1440px 
+*/
 
-*/    
-
-:root{
+:root {
     /* font */
-    --font-family: 'Inter', 'sans-serif';
+    --font-family: "Inter", 'arial';
 
     /* colors Primary */
     --primary-green: hsl(75, 94%, 57%);
@@ -19,7 +32,8 @@
     --neutral-dark-grey: hsl(0, 0%, 12%);
     --neutral-off-black: hsl(0, 0%, 8%);
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -27,33 +41,36 @@
     border: none;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--neutral-off-black);
     height: 100vh;
 }
-.container{
+
+.container {
     flex-direction: column;
     background-color: var(--neutral-dark-grey);
     width: 300px;
     height: 500px;
     border-radius: 10px;
 }
-.div-image{
+
+.div-image {
     display: flex;
     width: 100%;
     height: auto;
     justify-content: center;
 }
-.image{
+
+.image {
     margin-top: 30px;
     border-radius: 100%;
     width: 75px;
     height: auto;
 }
 
-.description{
-    
+.description h1,p {
+    font-family: var(--font-family);
 }
